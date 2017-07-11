@@ -109,7 +109,7 @@ describe( 'FormToggle', function() {
 			assert( toggleInput[ 0 ].id === toggleLabel[ 0 ].htmlFor );
 		} );
 
-		it( 'should create unique ids for each toggle', function() {
+		it.skip( 'should create unique ids for each toggle', function() {
 			var toggles = TestUtils.renderIntoDocument(
 					<Wrapper>
 						<FormToggle checked={ false } />

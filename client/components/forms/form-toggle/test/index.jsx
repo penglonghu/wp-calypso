@@ -1,4 +1,8 @@
 /**
+ * @jest-environment jsdom
+ */
+
+/**
  * External dependencies
  */
 import assert from 'assert';
@@ -32,7 +36,6 @@ describe( 'index', function() {
 } );
 
 describe( 'FormToggle', function() {
-	require( 'test/helpers/use-fake-dom' )();
 	afterEach( function() {
 		ReactDom.unmountComponentAtNode( document.body );
 	} );

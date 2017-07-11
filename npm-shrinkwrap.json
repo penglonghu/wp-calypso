@@ -313,7 +313,7 @@
       "version": "6.24.1"
     },
     "babel-jest": {
-      "version": "15.0.0",
+      "version": "20.0.3",
       "dev": true
     },
     "babel-loader": {
@@ -345,21 +345,11 @@
       "dev": true
     },
     "babel-plugin-istanbul": {
-      "version": "2.0.3",
-      "dev": true,
-      "dependencies": {
-        "find-up": {
-          "version": "1.1.2",
-          "dev": true
-        },
-        "path-exists": {
-          "version": "2.1.0",
-          "dev": true
-        }
-      }
+      "version": "4.1.4",
+      "dev": true
     },
     "babel-plugin-jest-hoist": {
-      "version": "15.0.0",
+      "version": "20.0.3",
       "dev": true
     },
     "babel-plugin-jscript": {
@@ -580,7 +570,7 @@
       "dev": true
     },
     "babel-preset-jest": {
-      "version": "15.0.0",
+      "version": "20.0.3",
       "dev": true
     },
     "babel-preset-stage-1": {
@@ -792,7 +782,7 @@
       "version": "1.3.6"
     },
     "bser": {
-      "version": "1.0.2",
+      "version": "2.0.0",
       "dev": true
     },
     "buffer": {
@@ -2011,7 +2001,7 @@
       "version": "1.1.1"
     },
     "fb-watchman": {
-      "version": "1.9.2",
+      "version": "2.0.0",
       "dev": true
     },
     "fbemitter": {
@@ -2822,10 +2812,6 @@
           "version": "1.5.2",
           "dev": true
         },
-        "optimist": {
-          "version": "0.6.1",
-          "dev": true
-        },
         "source-map": {
           "version": "0.4.4",
           "dev": true
@@ -3419,7 +3405,7 @@
       "version": "1.0.2"
     },
     "jest": {
-      "version": "17.0.3",
+      "version": "20.0.4",
       "dev": true,
       "dependencies": {
         "callsites": {
@@ -3439,7 +3425,7 @@
           "dev": true
         },
         "jest-cli": {
-          "version": "17.0.3",
+          "version": "20.0.4",
           "dev": true
         },
         "supports-color": {
@@ -3447,25 +3433,25 @@
           "dev": true
         },
         "yargs": {
-          "version": "6.6.0",
-          "dev": true
-        },
-        "yargs-parser": {
-          "version": "4.2.1",
+          "version": "7.1.0",
           "dev": true
         }
       }
     },
     "jest-changed-files": {
-      "version": "17.0.2",
+      "version": "20.0.3",
       "dev": true
     },
     "jest-config": {
-      "version": "17.0.3",
+      "version": "20.0.4",
       "dev": true,
       "dependencies": {
         "chalk": {
           "version": "1.1.3",
+          "dev": true
+        },
+        "glob": {
+          "version": "7.1.2",
           "dev": true
         },
         "supports-color": {
@@ -3475,7 +3461,7 @@
       }
     },
     "jest-diff": {
-      "version": "17.0.3",
+      "version": "20.0.3",
       "dev": true,
       "dependencies": {
         "chalk": {
@@ -3486,22 +3472,18 @@
           "version": "3.3.0",
           "dev": true
         },
-        "jest-matcher-utils": {
-          "version": "17.0.3",
-          "dev": true
-        },
-        "pretty-format": {
-          "version": "4.2.3",
-          "dev": true
-        },
         "supports-color": {
           "version": "2.0.0",
           "dev": true
         }
       }
     },
+    "jest-docblock": {
+      "version": "20.0.3",
+      "dev": true
+    },
     "jest-environment-jsdom": {
-      "version": "17.0.2",
+      "version": "20.0.3",
       "dev": true,
       "dependencies": {
         "acorn": {
@@ -3519,7 +3501,7 @@
       }
     },
     "jest-environment-node": {
-      "version": "17.0.2",
+      "version": "20.0.3",
       "dev": true
     },
     "jest-file-exists": {
@@ -3527,12 +3509,22 @@
       "dev": true
     },
     "jest-haste-map": {
-      "version": "17.0.3",
+      "version": "20.0.4",
       "dev": true
     },
     "jest-jasmine2": {
-      "version": "17.0.3",
-      "dev": true
+      "version": "20.0.4",
+      "dev": true,
+      "dependencies": {
+        "chalk": {
+          "version": "1.1.3",
+          "dev": true
+        },
+        "supports-color": {
+          "version": "2.0.0",
+          "dev": true
+        }
+      }
     },
     "jest-matcher-utils": {
       "version": "20.0.3",
@@ -3549,19 +3541,15 @@
       }
     },
     "jest-matchers": {
-      "version": "17.0.3",
+      "version": "20.0.3",
+      "dev": true
+    },
+    "jest-message-util": {
+      "version": "20.0.3",
       "dev": true,
       "dependencies": {
         "chalk": {
           "version": "1.1.3",
-          "dev": true
-        },
-        "jest-matcher-utils": {
-          "version": "17.0.3",
-          "dev": true
-        },
-        "pretty-format": {
-          "version": "4.2.3",
           "dev": true
         },
         "supports-color": {
@@ -3571,33 +3559,25 @@
       }
     },
     "jest-mock": {
-      "version": "17.0.2",
+      "version": "20.0.3",
+      "dev": true
+    },
+    "jest-regex-util": {
+      "version": "20.0.3",
       "dev": true
     },
     "jest-resolve": {
-      "version": "17.0.3",
+      "version": "20.0.4",
       "dev": true
     },
     "jest-resolve-dependencies": {
-      "version": "17.0.3",
+      "version": "20.0.3",
       "dev": true
     },
     "jest-runtime": {
-      "version": "17.0.3",
+      "version": "20.0.4",
       "dev": true,
       "dependencies": {
-        "babel-jest": {
-          "version": "17.0.2",
-          "dev": true
-        },
-        "babel-plugin-jest-hoist": {
-          "version": "17.0.2",
-          "dev": true
-        },
-        "babel-preset-jest": {
-          "version": "17.0.2",
-          "dev": true
-        },
         "camelcase": {
           "version": "3.0.0",
           "dev": true
@@ -3610,34 +3590,26 @@
           "version": "3.2.0",
           "dev": true
         },
+        "strip-bom": {
+          "version": "3.0.0",
+          "dev": true
+        },
         "supports-color": {
           "version": "2.0.0",
           "dev": true
         },
         "yargs": {
-          "version": "6.6.0",
-          "dev": true
-        },
-        "yargs-parser": {
-          "version": "4.2.1",
+          "version": "7.1.0",
           "dev": true
         }
       }
     },
     "jest-snapshot": {
-      "version": "17.0.3",
+      "version": "20.0.3",
       "dev": true,
       "dependencies": {
         "chalk": {
           "version": "1.1.3",
-          "dev": true
-        },
-        "jest-matcher-utils": {
-          "version": "17.0.3",
-          "dev": true
-        },
-        "pretty-format": {
-          "version": "4.2.3",
           "dev": true
         },
         "supports-color": {
@@ -3647,15 +3619,15 @@
       }
     },
     "jest-util": {
-      "version": "17.0.2",
+      "version": "20.0.3",
       "dev": true,
       "dependencies": {
         "chalk": {
           "version": "1.1.3",
           "dev": true
         },
-        "diff": {
-          "version": "3.3.0",
+        "leven": {
+          "version": "2.1.0",
           "dev": true
         },
         "supports-color": {
@@ -4427,11 +4399,11 @@
       "dev": true
     },
     "node-notifier": {
-      "version": "4.6.1",
+      "version": "5.1.2",
       "dev": true,
       "dependencies": {
-        "minimist": {
-          "version": "1.2.0",
+        "semver": {
+          "version": "5.4.1",
           "dev": true
         }
       }
@@ -4465,6 +4437,10 @@
         },
         "nopt": {
           "version": "1.0.10",
+          "dev": true
+        },
+        "optimist": {
+          "version": "0.2.8",
           "dev": true
         },
         "ps-tree": {
@@ -4622,7 +4598,7 @@
       "dev": true
     },
     "optimist": {
-      "version": "0.2.8",
+      "version": "0.6.1",
       "dev": true
     },
     "optionator": {
@@ -4662,6 +4638,10 @@
     },
     "p-locate": {
       "version": "2.0.0"
+    },
+    "p-map": {
+      "version": "1.1.1",
+      "dev": true
     },
     "package-json": {
       "version": "1.2.0",
@@ -5144,12 +5124,52 @@
       "resolved": "git://github.com/jsnmoon/react-codemod.git#650171db5f316d4a98df8b9d2897547aec314f37",
       "dev": true,
       "dependencies": {
+        "acorn": {
+          "version": "4.0.13",
+          "dev": true
+        },
+        "babel-jest": {
+          "version": "15.0.0",
+          "dev": true
+        },
+        "babel-plugin-istanbul": {
+          "version": "2.0.3",
+          "dev": true
+        },
+        "babel-plugin-jest-hoist": {
+          "version": "15.0.0",
+          "dev": true
+        },
+        "babel-preset-jest": {
+          "version": "15.0.0",
+          "dev": true
+        },
+        "bser": {
+          "version": "1.0.2",
+          "dev": true
+        },
+        "callsites": {
+          "version": "2.0.0",
+          "dev": true
+        },
+        "camelcase": {
+          "version": "3.0.0",
+          "dev": true
+        },
         "chalk": {
           "version": "1.1.3",
           "dev": true
         },
         "cli-width": {
           "version": "2.1.0",
+          "dev": true
+        },
+        "cliui": {
+          "version": "3.2.0",
+          "dev": true
+        },
+        "diff": {
+          "version": "3.3.0",
           "dev": true
         },
         "doctrine": {
@@ -5160,12 +5180,128 @@
           "version": "2.13.1",
           "dev": true
         },
+        "fb-watchman": {
+          "version": "1.9.2",
+          "dev": true
+        },
         "file-entry-cache": {
           "version": "1.3.1",
           "dev": true
         },
+        "find-up": {
+          "version": "1.1.2",
+          "dev": true
+        },
         "inquirer": {
           "version": "0.12.0",
+          "dev": true
+        },
+        "jest": {
+          "version": "17.0.3",
+          "dev": true,
+          "dependencies": {
+            "jest-cli": {
+              "version": "17.0.3",
+              "dev": true
+            }
+          }
+        },
+        "jest-changed-files": {
+          "version": "17.0.2",
+          "dev": true
+        },
+        "jest-config": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-diff": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-environment-jsdom": {
+          "version": "17.0.2",
+          "dev": true
+        },
+        "jest-environment-node": {
+          "version": "17.0.2",
+          "dev": true
+        },
+        "jest-haste-map": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-jasmine2": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-matcher-utils": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-matchers": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-mock": {
+          "version": "17.0.2",
+          "dev": true
+        },
+        "jest-resolve": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-resolve-dependencies": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-runtime": {
+          "version": "17.0.3",
+          "dev": true,
+          "dependencies": {
+            "babel-jest": {
+              "version": "17.0.2",
+              "dev": true
+            },
+            "babel-plugin-jest-hoist": {
+              "version": "17.0.2",
+              "dev": true
+            },
+            "babel-preset-jest": {
+              "version": "17.0.2",
+              "dev": true
+            }
+          }
+        },
+        "jest-snapshot": {
+          "version": "17.0.3",
+          "dev": true
+        },
+        "jest-util": {
+          "version": "17.0.2",
+          "dev": true
+        },
+        "jsdom": {
+          "version": "9.12.0",
+          "dev": true
+        },
+        "minimist": {
+          "version": "1.2.0",
+          "dev": true
+        },
+        "node-notifier": {
+          "version": "4.6.1",
+          "dev": true
+        },
+        "path-exists": {
+          "version": "2.1.0",
+          "dev": true
+        },
+        "pretty-format": {
+          "version": "4.2.3",
+          "dev": true
+        },
+        "sane": {
+          "version": "1.4.1",
           "dev": true
         },
         "strip-json-comments": {
@@ -5176,8 +5312,24 @@
           "version": "2.0.0",
           "dev": true
         },
+        "test-exclude": {
+          "version": "2.1.3",
+          "dev": true
+        },
         "user-home": {
           "version": "2.0.0",
+          "dev": true
+        },
+        "webidl-conversions": {
+          "version": "4.0.1",
+          "dev": true
+        },
+        "yargs": {
+          "version": "6.6.0",
+          "dev": true
+        },
+        "yargs-parser": {
+          "version": "4.2.1",
           "dev": true
         }
       }
@@ -5590,9 +5742,17 @@
       "dev": true
     },
     "sane": {
-      "version": "1.4.1",
+      "version": "1.6.0",
       "dev": true,
       "dependencies": {
+        "bser": {
+          "version": "1.0.2",
+          "dev": true
+        },
+        "fb-watchman": {
+          "version": "1.9.2",
+          "dev": true
+        },
         "minimist": {
           "version": "1.2.0",
           "dev": true
@@ -6172,7 +6332,7 @@
       }
     },
     "test-exclude": {
-      "version": "2.1.3",
+      "version": "4.1.1",
       "dev": true
     },
     "text-table": {

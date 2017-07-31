@@ -27,11 +27,10 @@ class SimplePaymentsView extends Component {
 
 		const { title, description, price, currency } = product;
 
+		const paypalButtonImageUrl = '/calypso/images/simple-payments/preview-paypal-button-gray.png';
+
 		// TODO: add from product.
 		const imageUrl = 'https://cldup.com/nKM0_KspYE.png';
-
-		// TODO: make proper icon and store on some proper place.
-		const paypalButtonImageUrl = 'https://cldup.com/DoIAwrACBs.png';
 
 		return (
 			<div className="wpview-content wpview-type-simple-payments">

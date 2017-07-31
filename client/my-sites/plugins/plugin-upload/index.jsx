@@ -14,6 +14,7 @@ import HeaderCake from 'components/header-cake';
 import Card from 'components/card';
 import ProgressBar from 'components/progress-bar';
 import UploadDropZone from 'blocks/upload-drop-zone';
+import EmptyContent from 'components/empty-content';
 import { uploadPlugin, clearPluginUpload } from 'state/plugins/upload/actions';
 import { getSelectedSiteId, getSelectedSiteSlug } from 'state/ui/selectors';
 import {
@@ -23,7 +24,7 @@ import {
 	isPluginUploadComplete,
 	isPluginUploadInProgress,
 } from 'state/selectors';
-import { isJetpackSite } from 'state/sites/selectors';
+import { getSiteAdminUrl, isJetpackSite, isJetpackSiteMultiSite } from 'state/sites/selectors';
 
 class PluginUpload extends React.Component {
 
@@ -79,13 +80,28 @@ class PluginUpload extends React.Component {
 		);
 	}
 
+	renderNotAvailableForMultisite() {
+		const { translate, siteAdminUrl } = this.props;
+
+		return (
+			<EmptyContent
+				title={ translate( 'Not available on multisite networks' ) }
+				line={ translate( 'Use the WP Admin interface instead' ) }
+				action={ translate( 'Open WP Admin' ) }
+				actionURL={ siteAdminUrl }
+				illustration={ '/calypso/images/illustrations/illustration-jetpack.svg' }
+			/>
+		);
+	}
+
 	render() {
-		const { translate } = this.props;
+		const { translate, isJetpackMultisite } = this.props;
 
 		return (
 			<Main>
 				<HeaderCake onClick={ this.back }>{ translate( 'Upload plugin' ) }</HeaderCake>
-				{ this.renderUploadCard() }
+				{ isJetpackMultisite && this.renderNotAvailableForMultisite() }
+				{ ! isJetpackMultisite && this.renderUploadCard() }
 			</Main>
 		);
 	}
@@ -107,6 +123,8 @@ export default connect(
 			error,
 			progress,
 			installing: progress === 100,
+			isJetpackMultisite: isJetpackSiteMultiSite( state, siteId ),
+			siteAdminUrl: getSiteAdminUrl( state, siteId ),
 		};
 	},
 	{ uploadPlugin, clearPluginUpload }

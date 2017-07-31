@@ -75,6 +75,7 @@ import Login from 'blocks/login/docs/example';
 import ReaderEmailSettings from 'blocks/reader-email-settings/docs/example';
 import UploadImage from 'blocks/upload-image/docs/example';
 import ConversationCommentList from 'blocks/conversations/docs/example';
+import ConversationCaterpillar from 'blocks/conversation-caterpillar/docs/example';
 
 export default React.createClass( {
 	displayName: 'AppComponents',
@@ -166,6 +167,7 @@ export default React.createClass( {
 					<ReaderEmailSettings />
 					<UploadImage />
 					<ConversationCommentList />
+					<ConversationCaterpillar />
 				</Collection>
 			</Main>
 		);

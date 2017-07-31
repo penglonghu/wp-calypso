@@ -22,7 +22,7 @@ const MediaValidationStore = {
 	_errors: {}
 };
 const sites = Sites();
-const ERROR_SITE_ID = 0;
+const ERROR_GLOBAL_ITEM_ID = 0;
 
 /**
  * Errors are represented as an object, mapping a site to an object of items
@@ -197,7 +197,7 @@ MediaValidationStore.dispatchToken = Dispatcher.register( function( payload ) {
 				errors = [ action.error ];
 			}
 
-			receiveServerError( action.siteId, action.id ? action.id : ERROR_SITE_ID, errors );
+			receiveServerError( action.siteId, action.id ? action.id : ERROR_GLOBAL_ITEM_ID, errors );
 			MediaValidationStore.emit( 'change' );
 			break;
 

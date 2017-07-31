@@ -14,8 +14,9 @@ import useMockery from 'test/helpers/use-mockery';
 /**
  * Module variables
  */
-const DUMMY_SITE_ID = 1,
-	DUMMY_MEDIA_OBJECT = { ID: 100, title: 'Image', extension: 'exe' };
+const DUMMY_SITE_ID = 1;
+const DUMMY_MEDIA_OBJECT = { ID: 100, title: 'Image', extension: 'exe' };
+const ERROR_GLOBAL_ITEM_ID = 0;
 
 describe( 'MediaValidationStore', function() {
 	let sandbox, MediaValidationStore, handler, Dispatcher, MediaValidationErrors;
@@ -354,10 +355,10 @@ describe( 'MediaValidationStore', function() {
 			} );
 		} );
 
-		it( 'should detect an external media error and set error on site 0', () => {
+		it( 'should detect an external media error and set error on item ERROR_GLOBAL_ITEM_ID', () => {
 			dispatchError( 'servicefail' );
 
-			const errors = MediaValidationStore.getErrors( DUMMY_SITE_ID, 0 );
+			const errors = MediaValidationStore.getErrors( DUMMY_SITE_ID, ERROR_GLOBAL_ITEM_ID );
 
 			expect( errors ).to.eql( [ MediaValidationErrors.SERVICE_FAILED ] );
 		} );

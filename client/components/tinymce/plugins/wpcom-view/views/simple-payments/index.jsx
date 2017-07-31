@@ -25,9 +25,10 @@ class SimplePaymentsView extends Component {
 			return ( <QuerySimplePayments siteId={ siteId } productId={ productId } /> );
 		}
 
-		const { title, description, price, currency } = product;
+		const { title, description, price, currency, multiple } = product;
 
 		const paypalButtonImageUrl = '/calypso/images/simple-payments/preview-paypal-button-gray.png';
+		const multipleIsEnabled = Number( multiple ) !== 0;
 
 		// TODO: add from product.
 		const imageUrl = 'https://cldup.com/nKM0_KspYE.png';
@@ -54,6 +55,7 @@ class SimplePaymentsView extends Component {
 							{ formatCurrency( price, currency ) }
 						</div>
 						<div className="wpview-type-simple-payments__pay-part">
+							{ multipleIsEnabled &&
 							<div className="wpview-type-simple-payments__pay-quantity">
 								<input
 									className="wpview-type-simple-payments__pay-quantity-input"
@@ -62,6 +64,7 @@ class SimplePaymentsView extends Component {
 									readOnly
 								/>
 							</div>
+							}
 							<div className="wpview-type-simple-payments__pay-paypal-button-wrapper">
 								<img
 									className="wpview-type-simple-payments__pay-paypal-button"

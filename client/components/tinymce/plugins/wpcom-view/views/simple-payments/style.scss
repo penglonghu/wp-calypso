@@ -21,14 +21,14 @@
 	display: flex;
 }
 
+.wpview-type-simple-payments__pay-quantity {
+	margin-right: 10px;
+}
+
 .wpview-type-simple-payments__pay-quantity-input {
 	border: 1px solid lighten( $gray, 10% );
 	padding: 10px;
 	width: 70px;
-}
-
-.wpview-type-simple-payments__pay-paypal-button-wrapper {
-	margin-left: 10px;
 }
 
 .wpview-type-simple-payments__pay-paypal-button {
